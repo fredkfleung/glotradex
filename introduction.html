@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GTXV Introduction</title>
+    <!--Bootstrap CDN-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+<!--Font Awesome CDN-->
+    <script src="https://kit.fontawesome.com/93028de2f2.js" crossorigin="anonymous"></script>
+
+<!--Custom Stylesheet-->
+    <!--link rel="stylesheet" href="./CSS/aboutUs_style.css"-->
+    <link rel="stylesheet" href="./CSS/intro_style.css">
+
+</head>
+
+<header class="bg-dark">
+<a class="logo" href="./index.html"><img class="logo" src="./images/GTX_logo_E1.jpg"  alt="logo" width="60"  height="60" ></a>
+    <div class="logo"><h4> <b>www.glotradex.com</b></h4></div>
+    <nav>
+        <ul class="nav_links">
+            <li><a href="./proposal.html">Proposal</a></li>
+            <li><a href="./introduction.html">Introduction</a></li>
+            <li><a href="./Index.html">About</a></li>
+        </ul>
+    </nav>
+    <a class="cta" href="./contactUs.html"><button>contact</button></a>
+</header>
+
+<body>
+
+<div class="container">
+    <h1>HOW TO WORK with GLOTRADEX</h1>
+    <div class="row">
+        <div class="col">
+            <div class="feature-img">
+                <!--img src="./images/Port of Hong Kong 3.jpg"  width="100%">
+                <img src="./images/btn-play-video_01.png" class="play-btn" width="60" height="60"
+                onclick="playVideo('./video/GTX_frontPage 1.mp4')"-->
+                <img src="./images/Port of Hong Kong 3.jpg"  width="100%">
+                <!--img src="./images/btn-play-video_01.png" class="play-btn" width="60" height="60"
+                onclick="playVideo('./video/Coprofile.mp4')"-->
+                <img src="./images/btn-play-video_01.png" class="play-btn" width="60" height="60"
+                onclick="playVideo('./video/Gtx introduction.mp4')">
+
+                <div class="text-block">
+                    <h5>Hello world</h5>
+                    <p>What a beautiful sunrise ! What is GLOTRADEX??</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="small-img-row">
+                <div class="small-img">
+                    <img src="./images/Hong_Kong_at_night_01.jpg" alt="video01" >
+                    <img src="./images/btn-play-video_01.png" class="play-btn"
+                    onclick="playVideo('./video/Gtx loginNwork.mp4')">
+                </div>
+                <p>How to add a membership in Glotradex??</p>
+            </div>
+            <div class="small-img-row">
+                <div class="small-img">
+                    <img src="./images/Hong_Kong_at_night_02.jpg" alt="video02" >
+                    <img src="./images/btn-play-video_01.png" class="play-btn"
+                    onclick="playVideo('./video/Gtx csc.mp4')">
+                </div>
+                <p>How to use the Customer Service Center in Glotradex??</p>
+            </div>
+            <div class="small-img-row">
+                <div class="small-img">
+                    <img src="./images/Hong_Kong_at_night_03.jpg" alt="video03" >
+                    <img src="./images/btn-play-video_01.png" class="play-btn"
+                    onclick="playVideo('./video/Gtx gloagent.mp4')">
+                </div>
+                <p>How to address the global agents with Glotradex??</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="video-player" id="videoPlayer">
+        <video width="100%" controls autoplay id="myVideo">
+            <source src="./video/GTX_frontPage 1.mp4" type="video/mp4">
+        </video>
+        <img src="./images/close-button-01.png" class="close-btn"
+        onclick="stopVideo()">
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+<script>
+
+    var videoPlayer = document.getElementById("videoPlayer");
+    var myVideo = document.getElementById("myVideo");
+
+    function stopVideo() {
+
+        videoPlayer.style.display = "none";
+
+    }
+
+    function playVideo(file) {
+
+        myVideo.src = file;
+        videoPlayer.style.display = "block";
+    }
+
+</script>
+
+
+
+</body>
+
+    <!-- Footer -->
+    <footer class="py-3 bg-dark p-0" >
+        <h6 class="m-0 text-center text-white">Copyright &copy; www.glotradex.com 2021</h6>
+   </footer>
+
+
+</html>
