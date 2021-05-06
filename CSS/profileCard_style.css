@@ -1,0 +1,72 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Langar&family=Lato&family=Roboto:ital@0;1&display=swap');
+
+
+:root {
+    --clr-primary-300: #F3EED9;
+    --clr-primary-400: #824936;
+
+    --clr-primary-100: #FFF;
+    --clr-primary-900: #222C2A;
+
+    --ff-primary: 'Roboto', sans-serif;
+    --ff-accent: 'playfair display', serif;
+    --ff-second: 'Lato';
+}
+
+ *,
+*::before,*::after {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    /*background-color: #24252A;*/
+}
+
+body {
+    font-family: var(--ff-primary);
+    font-weight: var(--clr-primary-300);
+    font-size: 1.3125rem;
+    line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: var(--ff-second);
+    font-weight: 900;
+    line-height: 1;
+}
+
+
+
+/*  Photo effect  */
+
+.container {
+    margin-top: 6%;
+}
+
+.single-content {
+    position: relative;
+    transition: 0.3s;
+    box-shadow: 10px 20px 20px rgba(0,0,0,0.8);
+}
+
+
+.single-content img {
+    width: 100%;
+    height: auto;
+}
+
+.text-content h4 {
+    text-align: center;
+    justify-content: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+
+
+
+
